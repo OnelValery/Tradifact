@@ -37,58 +37,56 @@ The bot reads trade setups from `instructions_file.xlsx`. Here's the expected fo
 
 ### 1. Clone the Repository
 
-'''bash
-git clone https://github.com/OnelValery/Tradifact.git
-cd Tradifact
+
+> git clone https://github.com/OnelValery/Tradifact.git
+> cd Tradifact
 
 **2. Required packages include:**
 
-ib_insync
+- ib_insync
 
-pandas
+- pandas
 
-python-dateutil
+- python-dateutil
 
-openpyxl
+- openpyxl
 
 **3. Start IBKR TWS or IB Gateway**
-Ensure the API is enabled:
+- Ensure the API is enabled:
+  TWS: Edit > Global Configuration > API > Settings > Enable ActiveX and Socket Clients
+   Default port: 7497 (paper), 7496 (live)
 
-TWS: Edit > Global Configuration > API > Settings > Enable ActiveX and Socket Clients
-
-Default port: 7497 (paper), 7496 (live)
-
-Optional Flags
+**Optional Flags**
 
 Flag	Description
 --log_accounts	Logs available IB accounts & exits
 --debug	Enables verbose debug logs
 --instructions	Path to a custom Excel file
 **🧩 Strategy Overview**
-🕒 Starts during Regular Trading Hours (RTH)
+-🕒 Starts during Regular Trading Hours (RTH)
 
-📉 Monitors call/put trigger levels
+-📉 Monitors call/put trigger levels
 
-🛒 Buys matching option contract (strike, expiry)
+-🛒 Buys matching option contract (strike, expiry)
 
 **🧯 Places 3 exit orders:**
 
-Stop-loss
+-Stop-loss
 
-Profit target
+- Profit target
 
-Time-based exit
+- Time-based exit
 
 🔒 Uses OCA to enforce single-exit behavior
 
 🧹 Exits open positions before market close
 
 **🧰 Example Use Cases**
-Live testing with small capital
+- Live testing with small capital
 
-Paper trading through IBKR
+- Paper trading through IBKR
 
-Adapting to other instruments (futures, stocks)
+- Adapting to other instruments (futures, stocks)
 
 
 
