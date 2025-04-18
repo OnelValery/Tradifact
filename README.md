@@ -59,19 +59,20 @@ The bot reads trade setups from `instructions_file.xlsx`. Here's the expected fo
 **Optional Flags**
 
 Flag	Description
---log_accounts	Logs available IB accounts & exits
---debug	Enables verbose debug logs
---instructions	Path to a custom Excel file
+- log_accounts	Logs available IB accounts & exits
+- debug	Enables verbose debug logs
+   instructions	Path to a custom Excel file
+  
 **🧩 Strategy Overview**
--🕒 Starts during Regular Trading Hours (RTH)
+- 🕒 Starts during Regular Trading Hours (RTH)
 
--📉 Monitors call/put trigger levels
+- 📉 Monitors call/put trigger levels
 
--🛒 Buys matching option contract (strike, expiry)
+- 🛒 Buys matching option contract (strike, expiry)
 
 **🧯 Places 3 exit orders:**
 
--Stop-loss
+- Stop-loss
 
 - Profit target
 
