@@ -35,11 +35,9 @@ The bot reads trade setups from `instructions_file.xlsx`. Here's the expected fo
 
 ---
 
-## 🛠️ Setup Instructions
-
 ### 1. Clone the Repository
 
-```bash
+'''bash
 git clone https://github.com/OnelValery/Tradifact.git
 cd Tradifact
 
@@ -53,7 +51,7 @@ python-dateutil
 
 openpyxl
 
-3. Start IBKR TWS or IB Gateway
+**3. Start IBKR TWS or IB Gateway**
 Ensure the API is enabled:
 
 TWS: Edit > Global Configuration > API > Settings > Enable ActiveX and Socket Clients
